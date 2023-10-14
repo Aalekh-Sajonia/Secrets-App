@@ -1,8 +1,8 @@
 let getSecrets = '';
 if(location.protocol === 'https:') {
-  getSecrets = 'https://infinite-shore-02990.herokuapp.com/getSecrets';
+  getSecrets = 'https://secret-confession.onrender.com/getSecrets';
 } else {
-  getSecrets = 'http://infinite-shore-02990.herokuapp.com/getSecrets';
+  getSecrets = 'http://secret-confession.onrender.com/getSecrets';
 }
 const insertHtml = document.querySelector("#secretSelector");
 
