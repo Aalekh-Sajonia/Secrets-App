@@ -154,7 +154,7 @@ app.post('/register', (req, res) => {
   if (!validateData(req.body.username, req.body.password)) {
     res.redirect('/error');
   }
-
+  consol.log("req", req.body)
   User.register({
     username: req.body.username.trim()
   }, req.body.password, (err, user) => {
