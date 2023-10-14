@@ -65,7 +65,7 @@ passport.deserializeUser(function(id, done) {
 passport.use(new GoogleStrategy({
     clientID: process.env.client_id,
     clientSecret: process.env.client_secret,
-    callbackURL: "https://infinite-shore-02990.herokuapp.com/auth/google/secrets",
+    callbackURL: "https://secret-confession.onrender.com/auth/google/secrets",
     userProfileURL: 'https://www.googleapis.com/oauth2/v3/userinfo' //future proof from depricating google + api
   },
   function(accessToken, refreshToken, profile, cb) {
