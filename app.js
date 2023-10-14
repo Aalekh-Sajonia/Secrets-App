@@ -21,7 +21,7 @@ app.use(bodyParser.urlencoded({
 app.use(bodyParser.json({
   extended: true
 }));
-// console.log(process.env.db_connect);
+console.log(process.env.db_connect);
 app.use(session({
   secret: "Our Little Secret.", // strign jisse encryption hoga
   resave: false,
